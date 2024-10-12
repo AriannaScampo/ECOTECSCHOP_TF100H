@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* Estilos del header */
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* Estilos del main */
+main {
+    padding: 2rem 0;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 2rem;
+}
+
+main section img {
+    max-width: 100%;
+    height: auto;
+}
+
+main section button {
+    border: none;
+    background-color: transparent;
+    color: #343a40;
+    font-size: 2rem;
+}
+
+main .row {
+    margin-top: 3rem;
+}
+
+main .row article {
+    margin-bottom: 2rem;
+}
+
+main .row p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Estilos de los productos */
+main .d-flex section {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .d-flex section img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+main .d-flex section p {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* productos */
+.portfolio {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(58, 238, 202, 0.8), rgba(28, 182, 152, .8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: #00bfff;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+}
+
+footer section a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+

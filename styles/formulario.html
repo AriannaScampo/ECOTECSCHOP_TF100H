@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - Ecotecshop</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Incluye tu CSS general -->
+    <link rel="stylesheet" href="formulario.css"> <!-- Incluye el CSS específico del formulario -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Aquí va el contenido del header, como el logotipo y la navegación -->
+    </header>
+
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <section class="col-md-6 d-flex justify-content-center">
+            <img src="../assets/uncelular.jpg" alt="Vista previa en teléfono" class="img-fluid">
+        </section>
+        <section class="col-md-6 bg-white p-4 rounded shadow">
+            <h3 class="mb-4">CREAR CUENTA</h3>
+            <form>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="col">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">CREAR CUENTA</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <!-- Aquí va el contenido del footer -->
+    </footer>
+
+</body>
+
+</html>
