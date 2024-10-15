@@ -1,201 +1,353 @@
-/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+    background-color: #e3e0e4;
 }
 
-h1, h2, h3, p {
-    margin: 0;
-}
-
-/* Estilos del header */
 header {
-    background-color: #343a40;
-    color: white;
-    padding: 1rem 0;
-}
-
-header h1 {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-nav ul {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/tres\ celulares.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
     display: flex;
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-    color: #00bfff;
-}
-
-/* Estilos del main */
-main {
-    padding: 2rem 0;
-}
-
-main h2 {
-    font-size: 2rem;
-    color: #0056b3;
-    margin-bottom: 2rem;
-}
-
-main section img {
-    max-width: 100%;
-    height: auto;
-}
-
-main section button {
-    border: none;
-    background-color: transparent;
-    color: #343a40;
-    font-size: 2rem;
-}
-
-main .row {
-    margin-top: 3rem;
-}
-
-main .row article {
-    margin-bottom: 2rem;
-}
-
-main .row p {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-/* Estilos de los productos */
-main .d-flex section {
-    text-align: center;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-main .d-flex section img {
-    width: 80px;
-    height: auto;
-    margin-bottom: 0.5rem;
-}
-
-main .d-flex section p {
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-/* productos */
-.portfolio {
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
-}
-
-.portfolio .contenido-seccion {
+.container{
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.portfolio h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-
-.portfolio .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.portfolio .galeria .proyecto {
-    position: relative;
-    max-width: 340px;
-    height: fit-content;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.portfolio .galeria .proyecto img {
-    width: 100%;
-    display: block;
-}
-
-.portfolio .galeria .proyecto .overlay {
+.menu{
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #f61706;
+}
+
+.menu .navbar ul{
+   list-style: none;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+
+    font-size: 18px;
+    padding: 20px; 
+    color: #ffffff;
+    display: block
+}
+
+.menu .navbar ul li a:hover{
+    color: #f61706;
+
+}
+#menu{
+    display: none;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-text{
     text-align: center;
-    background: linear-gradient(rgba(58, 238, 202, 0.8), rgba(28, 182, 152, .8));
+    width: 700px;
+}
+
+.header-text h1{
+    color: #ffffff;
+    font-size: 55px;
+    
+}
+.header-text p{
+    margin-top: 35px;
+    color: #ffffff;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: #f61706;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.btn-1:hover{
+    background-color: #f61706;
+}
+
+.services{
+    padding: 50px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services h2{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.txt-1{
+    font-size: 18px;
+    padding: 0px 200px;
+}
+
+.group-services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services{
+    padding: 35px 25px;
+}
+
+.services img{
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+.service h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service p{
+    font-size: 18px;
+}
+
+.porfolio{
+    text-align: center;
+    padding: 50px 0px;
+    color: #ffffff;
+}
+
+.porfolio-txt {
+    margin-bottom: 50px;
+}
+.portfolio-txt h2{
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.portfolio-txt p{
+    font-size: 18px;
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img{
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.bg-sec{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/smartwach1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt{
+    padding: 100px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-txt h2{
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.princes{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.price{
+    text-align: center;
+}
+
+.price h3{
+font-size: 50px;
+margin-bottom: 25px;
+}
+.price ul li{
+    font-size: 18px;
+
+}
+
+.footer{
+    padding: 150px 0px;
+
+}
+.ft{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.enlace h3{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.enlace li{
+    list-style: none;
+}
+.enlace a{
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.enlace form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
-    opacity: 0;
 }
 
-.portfolio .galeria .proyecto .overlay h3 {
-    margin-bottom: 20px;
-    transition: 1s;
+.btn-2{
+    padding: 10px 25px;
+    border: 0px;
+
 }
 
-.portfolio .galeria .proyecto .overlay:hover {
-    opacity: 1;
+.btn-3{
+    background-color: #f61706;
+    padding: 10px 25px;
+    border: 0px;
+    color: #ffffff;
+    margin-top: 15px;
 }
 
-.portfolio .galeria .proyecto .overlay:hover h3 {
-    margin-bottom: 0px;
-}
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left:0;
+        right: 0%;
+        background-color: #f61706;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover{
+        color: #ffffff;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
 
-/* Estilos del footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 1rem 0;
-}
+    .menu-icono{
+        width: 25px;
+    }
 
-footer nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 1rem;
-}
+    header{ 
+        height: 50vh;
+    }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-}
+    .header-text{
+        margin-top: 50px;
+        padding: 0px 25px;
+    }
 
-footer a:hover {
-    color: #00bfff;
-}
+    .services{
+        padding: 30px;
+    }
+    .txt-1{
+        padding: 30px;
+    }
 
-footer p {
-    margin-bottom: 1rem;
-}
+    .group-services{
+        flex-direction: column;
+    }
+    .service{
+        margin-top: 20px;
+    }
+    .porfolio{
+        padding: 0% 30px;
+        flex-direction: column;
+        text-align: center;
+    }
 
-footer section {
-    display: flex;
-    justify-content: center;
-}
+    .porfolio-txt p{
+        margin: 0%;
+    }
 
-footer section a {
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
-}
+    .imgs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgs img{
+        margin: 15px 0px 0px 0px;
+    }
+    .bg-txt{
+        padding: 30px;
+    }
 
+    .prices{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .price{
+        margin-bottom: 15px;
+    }
+
+    footer{
+        padding: 30px;
+
+    }
+    .ft{
+        text-align: center;
+        flex-direction: column;
+    }
+    .enlace form{
+        align-items: center;
+    }
+}
